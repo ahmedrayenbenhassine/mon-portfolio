@@ -1,0 +1,98 @@
+/* Réinitialisation de base */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* Couleurs principales (Thème sombre) */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav h2 { color: #ffffff; font-size: 24px; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: #c9d1d9; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+nav a:hover { color: #58a6ff; }
+
+/* Sections générales */
+.section-contenu { padding: 80px 20px; text-align: center; }
+.section-contenu h2 { color: #58a6ff; margin-bottom: 30px; font-size: 32px; }
+.sous-titre { color: #ffffff; margin-bottom: 15px; font-size: 22px; text-align: center; }
+
+/* Accueil (Hero) */
+.section-hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0d1117;
+    padding: 0 20px;
+}
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #58a6ff;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+.section-hero h1 { font-size: 48px; color: #ffffff; margin-bottom: 10px; }
+.highlight { color: #58a6ff; }
+.btn {
+    margin-top: 30px; padding: 12px 30px;
+    background-color: #58a6ff; color: #0d1117;
+    text-decoration: none; font-weight: bold; border-radius: 5px;
+    transition: transform 0.2s;
+}
+.btn:hover { transform: scale(1.05); }
+
+/* Compétences (Badges) */
+.competences { margin-top: 15px; margin-bottom: 25px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; max-width: 800px; margin-left: auto; margin-right: auto; }
+.competences span { background-color: #21262d; padding: 8px 18px; border-radius: 20px; border: 1px solid #30363d; font-size: 14px; color: #58a6ff; font-weight: bold; }
+
+/* Listes (Education & Certifications) */
+.list-item {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 25px; border-radius: 10px;
+    max-width: 700px; margin: 15px auto; text-align: left;
+}
+.list-item h4 { color: #ffffff; font-size: 20px; }
+.date { color: #8b949e; font-size: 14px; margin-bottom: 10px; display: inline-block; font-style: italic; }
+
+/* Carte Projet */
+.carte-projet {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 30px; border-radius: 10px;
+    max-width: 700px; margin: 20px auto; text-align: left;
+    transition: transform 0.3s;
+}
+.carte-projet:hover { transform: translateY(-5px); border-color: #58a6ff; }
+.carte-projet h3 { color: #ffffff; margin-bottom: 5px; }
+.carte-projet p { margin-bottom: 20px; margin-top: 10px;}
+.btn-projet { color: #58a6ff; text-decoration: none; font-weight: bold; border: 1px solid #58a6ff; padding: 8px 15px; border-radius: 5px; display: inline-block; }
+.btn-projet:hover { background-color: #58a6ff; color: #0d1117; }
+
+/* Footer / Contact */
+footer {
+    background-color: #161b22; text-align: center; padding: 60px 20px;
+    border-top: 1px solid #30363d;
+}
+footer h2 { color: #58a6ff; margin-bottom: 20px; font-size: 32px; }
+.btn-contact { margin: 10px; color: #58a6ff; text-decoration: none; font-weight: bold; border: 1px solid #30363d; padding: 10px 20px; border-radius: 5px; background-color: #21262d; display: inline-block; }
+.btn-contact:hover { border-color: #58a6ff; }
